@@ -26,25 +26,15 @@ data.forEach(job => {
 
             <div class="job-title">${job.title}</div>
 
-            <div class="job-info">
-                 ${job.city}
-            </div>
+            <div class="job-info">${job.city}</div>
 
-            <div class="salary">
-                 ${job.salary}
-            </div>
+            <div class="salary">${job.salary}</div>
 
-            <div class="job-info">
-                ${job.description}
-            </div>
+            <div class="job-info">${job.description}</div>
 
-            <div class="job-info">
-                 ${job.phone}
-            </div>
+            <div class="job-info">${job.phone}</div>
 
-            <div class="job-info">
-                 ${job.phone2}
-            </div>
+            <div class="job-info">${job.phone2}</div>
 
             <div class="buttons">
 
