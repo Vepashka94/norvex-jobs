@@ -27,11 +27,11 @@ data.forEach(job => {
             <div class="job-title">${job.title}</div>
 
             <div class="job-info">
-                📍 ${job.city}
+                 ${job.city}
             </div>
 
             <div class="salary">
-                💰 ${job.salary}
+                 ${job.salary}
             </div>
 
             <div class="job-info">
@@ -39,11 +39,11 @@ data.forEach(job => {
             </div>
 
             <div class="job-info">
-                ☎ ${job.phone}
+                 ${job.phone}
             </div>
 
             <div class="job-info">
-                ☎ ${job.phone2}
+                 ${job.phone2}
             </div>
 
             <div class="buttons">
