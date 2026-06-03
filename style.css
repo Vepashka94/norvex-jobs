@@ -33,12 +33,22 @@ background-position:0% 50%;
 }
 }
 
-/* Janly organizm görnüşindäki fon elementleri */
+/* Canvas fon */
+#bgCanvas{
+position:fixed;
+top:0;
+left:0;
+width:100vw;
+height:100vh;
+pointer-events:none;
+z-index:0;
+}
 
+/* Janly organizm şekilleri */
 .blob{
 position:fixed;
 pointer-events:none;
-z-index:-1;
+z-index:0;
 filter:blur(60px);
 animation:morph 15s infinite ease-in-out;
 }
@@ -101,30 +111,51 @@ border-radius:40% 60% 70% 30% / 40% 40% 60% 50%;
 
 }
 
+/* Mazmun fondan ýokarda */
+header,
+section,
+footer,
+#jobs-container,
+.job-card{
+position:relative;
+z-index:1;
+}
+
 header{
 background:rgba(0,51,102,.85);
 backdrop-filter:blur(10px);
 color:#fff;
 text-align:center;
 padding:20px;
+box-shadow:0 4px 15px rgba(0,0,0,.2);
 }
 
 header h1{
 font-size:32px;
+margin-bottom:5px;
 }
 
-.search-box{
+header p{
+font-size:15px;
+opacity:.9;
+}
+
+section{
 padding:15px;
 }
 
-.search-box input{
+#searchInput{
 width:100%;
+max-width:1200px;
+display:block;
+margin:auto;
 padding:12px;
-border-radius:8px;
+border-radius:10px;
 border:none;
 font-size:16px;
-background:rgba(255,255,255,.95);
 outline:none;
+background:rgba(255,255,255,.95);
+box-shadow:0 2px 10px rgba(0,0,0,.15);
 }
 
 #jobs-container{
@@ -164,16 +195,19 @@ padding:15px;
 font-size:22px;
 font-weight:bold;
 margin-bottom:10px;
+color:#003366;
 }
 
 .job-info{
 margin:8px 0;
+color:#444;
 }
 
 .salary{
 color:green;
 font-weight:bold;
 font-size:20px;
+margin:10px 0;
 }
 
 .buttons{
@@ -190,6 +224,7 @@ color:white;
 padding:10px;
 border-radius:8px;
 transition:.3s;
+font-weight:bold;
 }
 
 .btn:hover{
@@ -205,6 +240,15 @@ background:#25D366;
 background:#003366;
 }
 
+footer{
+text-align:center;
+padding:20px;
+color:white;
+background:rgba(0,51,102,.7);
+backdrop-filter:blur(10px);
+margin-top:20px;
+}
+
 @media(max-width:600px){
 
 header h1{
@@ -213,6 +257,14 @@ font-size:24px;
 
 .job-card img{
 height:180px;
+}
+
+.job-title{
+font-size:20px;
+}
+
+.salary{
+font-size:18px;
 }
 
 }
