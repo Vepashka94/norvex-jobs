@@ -26,8 +26,8 @@ function showJobs(data) {
 
             <div class="job-content">
                 <div class="job-title">${job.title}</div>
-                <div>${job.city}</div>
-                <div>${job.salary}</div>
+                <div>📍 ${job.city}</div>
+                <div>💰 ${job.salary}</div>
                 <div>${job.description}</div>
 
                 <a href="https://wa.me/${job.whatsapp}">WhatsApp</a>
