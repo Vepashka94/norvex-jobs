@@ -3,8 +3,9 @@ let jobs = [];
 fetch('jobs.json')
 .then(response => response.json())
 .then(data => {
-jobs = data;
-showJobs(jobs);
+    console.log(data);
+    jobs = data;
+    showJobs(jobs);
 });
 
 function showJobs(data){
