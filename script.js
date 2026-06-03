@@ -2,7 +2,6 @@ let jobs = [];
 
 document.addEventListener("DOMContentLoaded", () => {
 
-```
 fetch('./jobs.json')
     .then(r => {
         if (!r.ok) throw new Error("jobs.json load error");
@@ -28,13 +27,11 @@ document.getElementById("searchInput").addEventListener("input", (e) => {
 
     showJobs(filtered);
 });
-```
 
 });
 
 function showJobs(data) {
 
-```
 const container = document.getElementById("jobs-container");
 
 container.innerHTML = "";
