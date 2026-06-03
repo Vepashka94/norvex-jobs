@@ -1,23 +1,13 @@
 [
   {
     "id": 1,
-    "title": "Otelde Temizlikçi",
-    "city": "İstanbul",
-    "salary": "30000 TL",
+    "title": "Koyun Bakıcısı",
+    "city": "Konya",
+    "salary": "50000 TL",
     "phone": "05550777172",
-    "phone2": "05050988128",
+    "phone2": "05380685304",
+    "whatsapp": "905550777172",
     "description": "Yemek ve yatak var",
-    "image": "images/hotel.jpg"
-  },
-
-  {
-    "id": 2,
-    "title": "Kaportacı",
-    "city": "Edirne",
-    "salary": "60000 TL",
-    "phone": "05550777172",
-    "phone2": "05050988128",
-    "description": "Yemek ve yatak var",
-    "image": "images/kaporta.jpg"
+    "image": "images/koyun.jpg"
   }
 ]
