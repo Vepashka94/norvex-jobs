@@ -2,7 +2,7 @@ let jobs = [];
 
 document.addEventListener("DOMContentLoaded", () => {
 
-fetch('./jobs.json')
+fetch('./jobs.json', { cache: "no-store" })
     .then(r => {
         if (!r.ok) throw new Error("jobs.json load error");
         return r.json();
