@@ -33,6 +33,7 @@ function showJobs(data) {
 
                 <h3>${job.title}</h3>
                 <p>📍 ${job.city}</p>
+                <p>📍 ${job.cinsiyet}</p>
                 <p>💰 ${job.salary}</p>
                 <p>${job.description}</p>
 
