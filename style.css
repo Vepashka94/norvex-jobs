@@ -7,6 +7,42 @@ font-family:Arial, sans-serif;
 
 body{
 background:#f2f2f2;
+position:relative;
+overflow-x:hidden;
+}
+
+/* Syçanyň duran ýeri açylýar */
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:9999;
+background:radial-gradient(
+circle 120px at var(--x,50%) var(--y,50%),
+transparent 0,
+rgba(0,0,0,0.75) 180px
+);
+}
+
+/* Syçanyň yzyndaky ýumşak yşyk */
+body::after{
+content:"";
+position:fixed;
+width:25px;
+height:25px;
+border-radius:50%;
+background:rgba(0,51,102,0.5);
+pointer-events:none;
+left:var(--x,50%);
+top:var(--y,50%);
+transform:translate(-50%,-50%);
+filter:blur(15px);
+z-index:9998;
+transition:all .08s linear;
 }
 
 header{
@@ -46,6 +82,12 @@ background:white;
 border-radius:15px;
 overflow:hidden;
 box-shadow:0 3px 10px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.job-card:hover{
+transform:translateY(-5px);
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
 }
 
 .job-card img{
@@ -87,6 +129,12 @@ text-decoration:none;
 color:white;
 padding:10px;
 border-radius:8px;
+transition:0.3s;
+}
+
+.btn:hover{
+opacity:0.9;
+transform:scale(1.03);
 }
 
 .whatsapp{
