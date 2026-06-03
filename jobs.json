@@ -9,10 +9,10 @@
     "whatsapp": "905550777172",
     "description": "Yemek ve yatak var",
     "image": "images/koyun.jpg"
-  }
-    {
-    "id": 1,
-    "title": "towuk Bakıcısı",
+  },
+  {
+    "id": 2,
+    "title": "Towuk Bakıcısı",
     "city": "Konya",
     "salary": "30000 TL",
     "phone": "05550777172",
